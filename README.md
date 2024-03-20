@@ -26,8 +26,8 @@ Website URLs: The primary data used for this analysis is the "Input.xlsx" file, 
 ### Variables Derived/ Text Analysis
 |Variables|Description|Formula|
 |--------|------------|-------|
-|Positive Score| Calculated by assigning +1 for each word found in the positive score CSV and adding all the values|-|
-|Negative Score| Calculated by assigning -1 for each word found in negative words CSV and multiplying its sum with -1|-|
+|Positive Score| No of positive words per webpage |Calculated by assigning +1 for each word found in the positive score CSV and adding all the values|
+|Negative Score|No of negative words per web page| Calculated by assigning -1 for each word found in negative words CSV and multiplying its sum with -1|
 |Polarity Score| This is the score that determines if a given text is positive or negative in nature|Polarity Score = (Positive Score – Negative Score)/ ((Positive Score + Negative Score) + 0.000001) Range is from -1 to +1|
 |Subjectivity Score| Determines if a given text is objective or subjective| Subjectivity Score = (Positive Score + Negative Score)/ ((Total Words after cleaning) + 0.000001)|
 |Average Sentence Length|-|Average Sentence Length = the number of words / the number of sentences|
@@ -35,9 +35,9 @@ Website URLs: The primary data used for this analysis is the "Input.xlsx" file, 
 |Fog Index| Is a readability metric designed to estimate the readability of a piece of text|Fog Index = 0.4 * (Average Sentence Length + Percentage of Complex words)|
 |Average Number of Words Per Sentence|-|Average Number of Words Per Sentence = the total number of words / the total number of sentences|
 |Complex Word Count|Complex words are words in the text that contain more than two syllables|Assigning +1 for each word having more than two syllables and calculating its sum|
-|Word Count|Calculated total no of words by removing stop words and punctuations|-|
-|Syllable Count Per Word|Calculated by assigning +1 for each vowel found per word|-|
-|Personal Pronouns| Used regex to find the count of words - “I,” “we,” “my,” “ours,” and “us”|-|
+|Word Count|-|Calculated total no of words by removing stop words and punctuations|
+|Syllable Count Per Word|-|Calculated by assigning +1 for each vowel found per word|
+|Personal Pronouns| I, we, my, ours, us are some personal pronouns |Used regex to find the count of words - “I,” “we,” “my,” “ours,” and “us”|
 |Average Word Length|-|Average Word Length = Sum of the total number of characters in each word/Total number of words|
 
 
